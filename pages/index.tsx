@@ -32,7 +32,7 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://drive.google.com/file/d/1jxXO0y-mz6B0bCe_dxpRkLJ0qSinudEo/view?usp=sharing" download>
+                <a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://drive.google.com/file/d/1VIBL3R7eXumwEuOboGtiyjGQm7U9Ae0z/view?usp=sharing" download>
                   Resume
                 </a>
               </li>
