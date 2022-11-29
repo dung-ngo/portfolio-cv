@@ -1,5 +1,4 @@
 import classes from './Introduction.module.css';
-import { BsChevronDoubleDown } from 'react-icons/bs';
 
 const LandingPage = () => {
     return (
