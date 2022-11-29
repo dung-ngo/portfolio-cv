@@ -16,8 +16,8 @@ const About = () => {
         <h2 className='text-3xl py-1 text-teal-600 font-medium font-lobstertwo dark:text-teal-300'>Ngo Nguyen Thien Dung</h2>
         <h3 className='text-2xl py-2 text-orbitron dark:text-white'>Frontend Developer</h3>
         <div className='text-3xl flex justify-center gap-5 text-gray-600 dark:text-white'>
-          <a href="https://linkedin.com/in/dungnnt" target="_blank"><AiFillLinkedin /></a>
-          <a href="skype:dungngo.nntd?userinfo" target="_blank"><AiFillSkype /></a>
+          <a href="https://linkedin.com/in/dungnnt" target="_blank" rel="noreferrer"><AiFillLinkedin /></a>
+          <a href="skype:dungngo.nntd?userinfo" target="_blank" rel="noreferrer"><AiFillSkype /></a>
           <a href="mailto:dungngo.nntd@gmail.com"><AiFillMail /></a>
         </div>
         <div className='m:mx-60'>
