@@ -12,9 +12,7 @@ const OtherSkill = () => {
                 <div className='basis-1/3 flex-1'>
                     <h4 className='text-xl'>Public Speaking</h4>
                     <Image alt='publicspeaking' src={publicspeaking} className='rounded-lg object-cover my-5' width={100} height={100} layout='responsive' />
-                    <p className='text-sm'>
-                        I was a Guest Speaker for Bosch University Tour 2022 to support organization branding activities.
-                    </p>
+                    <p className='text-sm'>I was a Guest Speaker for Bosch University Tour 2022 to support organization branding activities.</p>
                 </div>
                 <div className='basis-1/3 flex-1'>
                     <h4 className='text-xl'>Team player</h4>
