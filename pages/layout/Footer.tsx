@@ -10,7 +10,7 @@ const Footer = () => {
             </div>
             <div className='text-center text-xs pt-3 leading-6 dark:text-white'>
                 <p>Copyright &copy; 2022 - All Right Reserved</p>
-                <p>Designed by June D. Ngo</p>
+                <p>Designed by Dung Ngo</p>
             </div>
         </div>
     )
