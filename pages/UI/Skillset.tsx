@@ -20,6 +20,7 @@ const Skillset = () => {
                         <p className='text-gray-800 py-1'>VueJS</p>
                         <p className='text-gray-800 py-1'>TypeScript</p>
                         <p className='text-gray-800 py-1'>HTML5, CSS3</p>
+                        <p className='text-gray-800 py-1'>Responsive Web App</p>
                     </div>
                     <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:grow'>
                         <div className={classes['center-image']}>
