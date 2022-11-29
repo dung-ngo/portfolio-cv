@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: "comfortaa";
+  scroll-behavior: smooth;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button.buttons {
+  /* background-color: #5EEAD4; */
+  background-image: linear-gradient(to right, #06b6d4, #14b8a6);
+  color: #fff;
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+a.buttons {
+  /* background-color: #5EEAD4; */
+  background-image: linear-gradient(to right, #06b6d4, #14b8a6);
+  color: #fff;
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+.up-arrow a {
+  font-size: xx-large;
+  position: fixed;
+  bottom: 1rem;
+  right: .5rem;
+}
+
+/* header icon */
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
+
+/* body */
+@font-face {
+  font-family: "comfortaa";
+  src: url("../public/Comfortaa-VariableFont_wght.ttf");
+}
+
+/* job title */
+@font-face {
+  font-family: "orbitron";
+  src: url("../public/Orbitron-VariableFont_wght.ttf");
+}
+
+/* name */
+@font-face {
+  font-family: "lobstertwo";
+  src: url("../public/LobsterTwo-Regular.ttf");
+}
+
+/* Welcome text */
+@font-face {
+  font-family: "syncopate";
+  src: url("../public/Syncopate-Regular.ttf");
+}
+
+/* i am text */
+@font-face {
+  font-family: "saira";
+  src: url("../public/Saira-VariableFont.ttf");
+}
+
+@font-face {
+  font-family: "robotocondensed";
+  src: url("../public/RobotoCondensed-Regular.ttf");
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */

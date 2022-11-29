@@ -1,0 +1,76 @@
+.caption {
+	display: flex;
+	line-height: 50px;
+	position: relative;
+}
+
+.text-box {
+	margin-left: 1rem;
+}
+
+.text-box div {
+	display: inline-block;
+	position: absolute;
+	top: -200px;
+	transform: rotateX(-90deg);
+	opacity: 0;
+	animation-timing-function: ease;
+}
+
+.text-box div:nth-child(1) {
+	animation: rollDown 5s forwards infinite;
+}
+
+.text-box div:nth-child(2) {
+	animation: rollDown2 5s forwards infinite;
+}
+
+@keyframes rollDown {
+	0% {
+		top: -2rem;
+		transform: rotateX(-90deg);
+	}
+
+	30% {
+		top: 1.5rem;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+
+	40% {
+		top: 1.5rem;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+
+	50% {
+		top: 5rem;
+		transform: rotateX(30deg);
+		opacity: 0;
+	}
+}
+
+@keyframes rollDown2 {
+	50% {
+		top: -2rem;
+		transform: rotateX(-90deg);
+	}
+
+	80% {
+		top: 1.5rem;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+
+	90% {
+		top: 1.5rem;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+
+	100% {
+		top: 5rem;
+		transform: rotateX(30deg);
+		opacity: 0;
+	}
+}
