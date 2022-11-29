@@ -23,7 +23,7 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900' style={{ width: 'fit-content' }}>
         <section id='intro'>
           <nav className='bg-white top-0 py-10 mb-12 flex justify-between dark:bg-gray-900'>
-            <h1 className='text-xl font-burtons dark:text-white'>DungNgo</h1>
+            <h1 className='text-xl font-burtons dark:text-white'>Dung Ngo</h1>
             <ul className='flex items-center'>
               <li>
                 <CgDarkMode
@@ -32,7 +32,7 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://drive.google.com/file/d/1ybl4QOnebnYpaAkeFCR99GUP6nTgF7jZ/view?usp=sharing" download>
+                <a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://drive.google.com/file/d/1jxXO0y-mz6B0bCe_dxpRkLJ0qSinudEo/view?usp=sharing" download>
                   Resume
                 </a>
               </li>
