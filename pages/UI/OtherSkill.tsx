@@ -13,21 +13,21 @@ const OtherSkill = () => {
                     <h4 className='text-xl'>Public Speaking</h4>
                     <Image alt='publicspeaking' src={publicspeaking} className='rounded-lg object-cover my-5' width={100} height={100} layout='responsive' />
                     <p className='text-sm'>
-                        I was a Guest Speaker for "Bosch University Tour 2022" to support organization branding activities.
+                        I was a Guest Speaker for Bosch University Tour 2022 to support organization branding activities.
                     </p>
                 </div>
                 <div className='basis-1/3 flex-1'>
                     <h4 className='text-xl'>Team player</h4>
                     <Image alt='teamplayer' src={teamplayer} className='rounded-lg object-cover my-5' width={100} height={100} layout='responsive' />
                     <p className='text-sm'>
-                        I really enjoy being a part of a team and I thrive when I'm able to effectively collaborate with others.
+                        I really enjoy being a part of a team and I thrive when I am able to effectively collaborate with others.
                     </p>
                 </div>
                 <div className='basis-1/3 flex-1'>
                     <h4 className='text-xl'>Problem solving</h4>
                     <Image alt='problemsolving' src={problemsolving} className='rounded-lg object-cover my-5' width={100} height={100} layout='responsive' />
                     <p className='text-sm'>
-                        I consider myself a problem solver, I am definitely not afraid to confront problems, and I won’t hide a problem I face at work.
+                        I consider myself a problem solver, I am definitely not afraid to confront problems, and I will not hide a problem I face at work.
                     </p>
                 </div>
                 <div className='basis-1/3 flex-1'>
