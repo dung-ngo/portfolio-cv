@@ -17,7 +17,7 @@ const About = () => {
   });
   
   return (
-    <div className='pt-5 pb-16'>
+    <div className='md:pt-5 pb-16'>
       <div className='mt-20 bg-gradient-to-r from-green-400 to-teal-500 mx-auto mb-5 rounded-full w-80 h-80 p-4 md:w-60 md:h-60 md:p-2'>
         <div className='relative mx-auto w-72 h-72 rounded-full overflow-hidden md:w-56 md:h-56'>
           <Image alt='profile-img' src={avatar} layout='fill' objectFit='cover' />

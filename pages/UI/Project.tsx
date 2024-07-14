@@ -47,11 +47,11 @@ const Project = () => {
                             <Image alt='bosch' src={bosch} width={200} height={200} />
                         </div>
                         <div className={classes['project-tech']}>
-                            <h3 className='text-lg font-medium pt-8 pb-2'>Projects</h3>
+                            <h3 className='text-lg font-medium md:pt-8 pb-2'>Projects</h3>
                             <hr className='mb-5 border-solid border-gray-500' />
-                            <p className='text-gray-800 py-1'>Automotive solutions</p>
-                            <p className='text-gray-800 py-1'>Learning search portal</p>
-                            <p className='text-gray-800 py-1'>Customer requirement server</p>
+                            <p className='text-gray-800 md:py-1 sm:pb-1'>Automotive solutions</p>
+                            <p className='text-gray-800 md:py-1 sm:pb-1'>Learning search portal</p>
+                            <p className='text-gray-800 md:py-1'>Customer requirement server</p>
                         </div>
                     </div>
                 </div>
