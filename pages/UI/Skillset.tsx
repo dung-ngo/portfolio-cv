@@ -6,7 +6,7 @@ import classes from './Skillset.module.css';
 
 const Skillset = () => {
     return (
-        <>
+        <div>
             <div className='my-10'>
                 <h3 className='text-3xl font-bold dark:text-white'>Technical skills</h3>
                 <div className='lg:flex gap-10'>
@@ -49,7 +49,7 @@ const Skillset = () => {
                 </div>
             </div>
 
-        </>
+        </div>
     );
 }
 

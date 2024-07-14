@@ -13,12 +13,13 @@ import Footer from './layout/Footer';
 export default function Home() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
   const resumeFile = (
-    <li>
-    {/* <a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://drive.google.com/file/d/1ok50UCgz8p9VbS_040eHQml4amLvTeIe/view?usp=sharing" download> */}
-    <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://drive.google.com/file/d/1VaFVjKjHlgt0qIi-8QKeRyc9M4AwGLKd/view?usp=sharing" download>
-      Resume
-    </a>
-  </li>
+    <div>
+      <li>
+        <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://drive.google.com/file/d/13ACBbDJ1M168Hp3FxVXE0568UBREieJb/view?usp=sharing" download>
+          Resume
+        </a>
+      </li>
+    </div>
   )
 
   return (
@@ -32,7 +33,7 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900' style={{ width: 'fit-content' }}>
         <section id='intro'>
           <nav className='bg-white top-0 py-10 mb-12 flex justify-between dark:bg-gray-900'>
-            <h1 className='text-xl font-burtons dark:text-white'>Dung Ngo (June)</h1>
+            <h1 className='text-xl font-burtons dark:text-white'>June Ngo</h1>
             <ul className='flex items-center'>
               <li>
                 <CgDarkMode
@@ -40,7 +41,7 @@ export default function Home() {
                   onClick={() => setDarkMode(!darkMode)}
                 />
               </li>
-              {/* {resumeFile} */}
+              {resumeFile}
             </ul>
           </nav>
           <Introduction />

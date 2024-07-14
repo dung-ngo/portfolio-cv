@@ -6,9 +6,9 @@ import classes from './Project.module.css';
 
 const Project = () => {
     return (
-        <>
+        <div>
             <div className='my-10'>
-                <h3 className='text-3xl font-bold dark:text-white'>Website/WebApp I&apos;ve made</h3>
+                <h3 className='text-3xl font-bold dark:text-white'>Website and WebApp projects</h3>
                 <div className='lg:flex gap-10'>
 
                     <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:grow'>
@@ -56,7 +56,7 @@ const Project = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
