@@ -1,36 +1,42 @@
-
 import Image from 'next/image';
-import avatar from '../../public/avatar.png';
-import { AiFillLinkedin, AiFillSkype, AiFillMail } from 'react-icons/ai';
+import avatar from '../../public/avatar.jpg';
+import zalo from '../../public/zalo.svg';
+import { AiFillLinkedin, AiFillSkype, AiFillMail, AiOutlineWhatsApp } from 'react-icons/ai';
 
 const About = () => {
+  const introText = {
+    intro1: `Hi, I am Dung Ngo (June), a software engineer with years of experience, open to opportunities worldwide. My expertise lies in crafting intuitive user interfaces and scalable web applications. I am proficient in JavaScript and responsive design, excelling at translating design mock-ups into responsive UI components that ensure seamless cross-device functionality.`,
+    intro2: `With a detail-oriented, proactive approach, I thrive in fast-paced environments, consistently delivering high-quality solutions on time and within budget. I am passionate about web app development and committed to continuous learning and staying updated with industry trends. I am also enhancing my skill set and continually updating my knowledge of new technologies to become an expert in my domain.`,
+    intro3: `If you are looking for a motivated developer eager to work abroad or remotely, or you just want to build your own website or web application for personal interest or business purposes, I'd be excited to have a small talk with you. Let's connect and discuss how we can collaborate to create something incredible!`
+  }
   return (
     <div className='pt-5 pb-16'>
-      <div className='bg-gradient-to-r from-green-400 to-teal-500 mx-auto mb-5 rounded-full w-80 h-80 p-4 md:w-60 md:h-60 md:p-2'>
+      <div className='mt-20 bg-gradient-to-r from-green-400 to-teal-500 mx-auto mb-5 rounded-full w-80 h-80 p-4 md:w-60 md:h-60 md:p-2'>
         <div className='relative mx-auto w-72 h-72 rounded-full overflow-hidden md:w-56 md:h-56'>
           <Image alt='profile-img' src={avatar} layout='fill' objectFit='cover' />
         </div>
       </div>
 
       <div className='text-center'>
-        <h2 className='text-3xl py-1 text-teal-600 font-medium font-lobstertwo dark:text-teal-300'>Ngo Nguyen Thien Dung</h2>
-        <h3 className='text-2xl py-2 text-orbitron dark:text-white'>Frontend Developer</h3>
+        <h2 className='text-3xl py-1 text-teal-600 font-medium font-lobstertwo dark:text-teal-300'>Dung Ngo (June)</h2>
+        <h3 className='text-2xl py-2 text-orbitron dark:text-white'>Software Engineer</h3>
         <div className='text-3xl flex justify-center gap-5 text-gray-600 dark:text-white'>
           <a href="https://linkedin.com/in/dungnnt" target="_blank" rel="noreferrer"><AiFillLinkedin /></a>
           <a href="skype:dungngo.nntd?userinfo" target="_blank" rel="noreferrer"><AiFillSkype /></a>
+          <a href="https://wa.me/0938010694?text=Hello%20there,%20I%20am%20ready%20to%20talk!" target="_blank" rel="noreferrer"><AiOutlineWhatsApp /></a>
+          {/* <a href="https://wa.me/0938010694?text=Hello%20there,%20I%20am%20ready%20to%20talk!" target="_blank" rel="noreferrer"><img src={zalo} /></a> */}
           <a href="mailto:dungngo.nntd@gmail.com"><AiFillMail /></a>
         </div>
         <div className='m:mx-60'>
-          <p className='text-md py-3 text-gray-800 max-w-xl mx-auto dark:text-white'>
-            I am a girl who loves code in Saigon, Vietnam, and I am very passionate and dedicated to my work.
-          </p>
           <p className='text-md py-2 text-gray-800 max-w-xl mx-auto dark:text-white'>
-            With over 1 year experience as a Front end Developer, I eager to face significant challenges to strengthen my competency.
-          </p>
+            <ul>
+              <li className="mb-5">{introText.intro1}</li>
+              <li className="mb-5">{introText.intro2}</li>
+              <li>{introText.intro3}</li>
+            </ul>
+          </p>  
         </div>
       </div>
-
-
     </div>
   )
 }

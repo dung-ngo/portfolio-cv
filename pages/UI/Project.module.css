@@ -1,0 +1,11 @@
+.center-image img {
+    display: unset !important;
+}
+
+.center-image {
+    height: 200px;
+}
+
+.project-tech {
+    height: 150px;
+}

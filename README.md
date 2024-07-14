@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+visit my website at https://junengo.netlify.app/
+
 First, run the development server:
 
 ```bash

@@ -8,7 +8,7 @@ const Skillset = () => {
     return (
         <>
             <div className='my-10'>
-                <h3 className='text-3xl font-bold dark:text-white'>Technical skill</h3>
+                <h3 className='text-3xl font-bold dark:text-white'>Technical skills</h3>
                 <div className='lg:flex gap-10'>
                     <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:grow'>
                         <div className={classes['center-image']}>
@@ -16,10 +16,10 @@ const Skillset = () => {
                         </div>
                         <h3 className='text-lg font-medium pt-8 pb-2'>Main Technologies</h3>
                         <hr className='mb-5 border-solid border-gray-500' />
+                        <p className='text-gray-800 py-1'>HTML, CSS</p>
                         <p className='text-gray-800 py-1'>ReactJS</p>
-                        <p className='text-gray-800 py-1'>VueJS</p>
                         <p className='text-gray-800 py-1'>TypeScript</p>
-                        <p className='text-gray-800 py-1'>HTML5, CSS3</p>
+                        <p className='text-gray-800 py-1'>SharePoint (as a user)</p>
                         <p className='text-gray-800 py-1'>Responsive Web App</p>
                     </div>
                     <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:grow'>

@@ -9,8 +9,8 @@ const LandingPage = () => {
                     <div className={classes.caption}>
                         <div className='mt-6 text-xl font-saira md:text-3xl'>I am</div>
                         <div className={classes['text-box']}>
-                            <div className='text-xl font-saira md:text-3xl'>Ngo Nguyen Thien Dung</div>
-                            <div className='text-xl font-saira md:text-3xl'>A Front end Developer</div>
+                            <div className='text-xl font-saira md:text-3xl'>Dung Ngo (June)</div>
+                            <div className='text-xl font-saira md:text-3xl'>A software engineer</div>
                         </div>
                     </div>
                 </div>
