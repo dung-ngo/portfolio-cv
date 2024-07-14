@@ -1,7 +1,6 @@
 import {useState} from "react";
 import Image from 'next/image';
 import avatar from '../../public/avatar.jpg';
-import zalo from '../../public/zalo.svg';
 import { AiFillLinkedin, AiFillSkype, AiFillMail, AiOutlineWhatsApp } from 'react-icons/ai';
 
 const About = () => {
