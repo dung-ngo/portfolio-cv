@@ -1,3 +1,4 @@
+import {useState} from "react";
 import Image from 'next/image';
 import avatar from '../../public/avatar.jpg';
 import zalo from '../../public/zalo.svg';
@@ -5,10 +6,17 @@ import { AiFillLinkedin, AiFillSkype, AiFillMail, AiOutlineWhatsApp } from 'reac
 
 const About = () => {
   const introText = {
-    intro1: `Hi, I am Dung Ngo (June), a software engineer with years of experience, open to opportunities worldwide. My expertise lies in crafting intuitive user interfaces and scalable web applications. I am proficient in JavaScript and responsive design, excelling at translating design mock-ups into responsive UI components that ensure seamless cross-device functionality.`,
-    intro2: `With a detail-oriented, proactive approach, I thrive in fast-paced environments, consistently delivering high-quality solutions on time and within budget. I am passionate about web app development and committed to continuous learning and staying updated with industry trends. I am also enhancing my skill set and continually updating my knowledge of new technologies to become an expert in my domain.`,
-    intro3: `If you are looking for a motivated developer eager to work abroad or remotely, or you just want to build your own website or web application for personal interest or business purposes, I'd be excited to have a small talk with you. Let's connect and discuss how we can collaborate to create something incredible!`
+    intro1: `Hi, I am Dung Ngo (June), a software engineer with years of experience, open to new opportunities.`,
+    intro2: `My expertise lies in crafting intuitive user interfaces and scalable web applications. I am proficient in JavaScript and responsive design, excelling at translating design mock-ups into responsive UI components that ensure seamless cross-device functionality.`,
+    intro3: `With a detail-oriented, proactive approach, I thrive in fast-paced environments, consistently delivering high-quality solutions on time and within budget. I am passionate about web app development and committed to continuous learning and staying updated with industry trends. I am also enhancing my skill set and continually updating my knowledge of new technologies to become an expert in my domain.`,
   }
+  const [showMoreButton, setShowMoreButton] = useState({
+    isShow: false,
+    buttonColor: "",
+    onShowBtnText: "More about me...",
+    onHideBtnText: "Hide"
+  });
+  
   return (
     <div className='pt-5 pb-16'>
       <div className='mt-20 bg-gradient-to-r from-green-400 to-teal-500 mx-auto mb-5 rounded-full w-80 h-80 p-4 md:w-60 md:h-60 md:p-2'>
@@ -24,17 +32,26 @@ const About = () => {
           <a href="https://linkedin.com/in/dungnnt" target="_blank" rel="noreferrer"><AiFillLinkedin /></a>
           <a href="skype:dungngo.nntd?userinfo" target="_blank" rel="noreferrer"><AiFillSkype /></a>
           <a href="https://wa.me/0938010694?text=Hello%20there,%20I%20am%20ready%20to%20talk!" target="_blank" rel="noreferrer"><AiOutlineWhatsApp /></a>
-          {/* <a href="https://wa.me/0938010694?text=Hello%20there,%20I%20am%20ready%20to%20talk!" target="_blank" rel="noreferrer"><img src={zalo} /></a> */}
           <a href="mailto:dungngo.nntd@gmail.com"><AiFillMail /></a>
         </div>
         <div className='m:mx-60'>
           <p className='text-md py-2 text-gray-800 max-w-xl mx-auto dark:text-white'>
             <ul>
               <li className="mb-5">{introText.intro1}</li>
-              <li className="mb-5">{introText.intro2}</li>
-              <li>{introText.intro3}</li>
+              {showMoreButton.isShow &&
+                <>
+                  <li className="mb-5">{introText.intro2}</li>
+                  <li>{introText.intro3}</li>
+                </>
+              }
             </ul>
-          </p>  
+          </p>
+            <button
+              className={`${showMoreButton.isShow ? "bg-gray-500 hover:bg-gray-700" : "bg-teal-500 hover:bg-teal-700"} text-white font-bold py-2 px-8 rounded mt-10`}
+              onClick={() => setShowMoreButton({ ...showMoreButton, isShow: !showMoreButton.isShow })}
+            >
+              {showMoreButton.isShow ? showMoreButton.onHideBtnText : showMoreButton.onShowBtnText}
+            </button>
         </div>
       </div>
     </div>
