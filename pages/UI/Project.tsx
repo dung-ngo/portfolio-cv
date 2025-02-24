@@ -3,7 +3,6 @@ import bosch from "../../public/bosch.png";
 import vive from "../../public/vivegreen.png";
 import bepnhavegan from "../../public/bepnhavegan.jpg";
 import classes from "./Project.module.css";
-import { AiOutlineInfoCircle } from "react-icons/ai";
 
 const Project = () => {
   return (
@@ -54,16 +53,8 @@ const Project = () => {
               <Image alt="bosch" src={bosch} width={200} height={200} />
             </div>
             <div className={classes["project-tech"]}>
-              <div className="flex justify-center">
-                <h3 className=" text-lg font-medium md:pt-8 pb-2">Projects</h3>
-                <div className="ml-1">
-                  <AiOutlineInfoCircle
-                    className="text-gray-500 text-xl"
-                    title="unable to share due to a signed NDA"
-                    size={20}
-                  />
-                </div>
-              </div>
+              <h3 className=" text-lg font-medium md:pt-8 pb-2">Projects</h3>
+              <small>(NDA signed)</small>
               <hr className="mb-5 border-solid border-gray-500" />
               <p className="text-gray-800 md:py-1 sm:pb-1 sm:text-sm">
                 Automotive solutions
