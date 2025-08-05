@@ -17,7 +17,7 @@ const Footer = () => {
           <AiFillSkype />
         </a>
         <a
-          href="https://wa.me/0938010694?text=Hello%20there,%20I%20am%20ready%20to%20talk!"
+          href="https://wa.me/01123517047?text=Hello%20there,%20I%20am%20ready%20to%20talk!"
           target="_blank"
           rel="noreferrer"
         >
